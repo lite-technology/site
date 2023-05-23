@@ -1,10 +1,16 @@
 export const theme = {
     colors: {
-        primary: "#02FF86", 
-        background: "#171616", 
-        secondaryBackground: "#211F1F",
-        text: "#EEEEEE", 
-        secondaryText: "#A7A6A6"
+        primary: "#1484C1", 
+        secondary: "77B8DA",
+        background: "#0E0E0E", 
+        secondaryBackground: "#25201E",
+        text: "#F3F2F2", 
+        secondaryText: "#BFBFBF"
        
-    }
+    },
+    sizes: {
+        containerPadding: '5%'
+    },
+    row: 'display: flex; flex-direction: row;',
+    column: 'display: flex; flex-direction: column;'
 }
