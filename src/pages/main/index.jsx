@@ -17,12 +17,12 @@ const ServiceCard = ({ image, title, description, url }) => {
       <div className="textBox">
         <p className="text head">{title}</p>
         <span>{description}</span>
-        <button><a  href={url ? url : "/"}>ver mais</a></button>
+        
       </div>
     </div>
   );
 };
-
+//<button><a  href={url ? url : "/"}>ver mais</a></button>
 const InformationContainer = ({ inverse, text, Img }) => (
   <Information inverse={inverse}>
     <div class="text-container">
