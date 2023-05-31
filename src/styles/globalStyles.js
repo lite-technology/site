@@ -30,6 +30,7 @@ body {
     background: ${({theme}) => theme.colors.primary};
     border-radius: 6px;
 }
+
 `
 
 export default GlobalStyle

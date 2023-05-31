@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const Container = styled.div`
     background-color: ${({theme}) => theme.colors.background};
     flex-direction: column;
@@ -27,6 +28,11 @@ border-radius: 50%;
     border: 0.1px solid rgba(255,255,255,0.05);
     width: 190px;
     height: 190px;
+
+    &:hover{
+    border: 0.1px solid rgba(255,255,255,0.08);
+    filter: brightness(1.05);
+}
 
 }
 
@@ -82,10 +88,30 @@ align-items: center;
 display: flex;
 font-weight: 500;
 letter-spacing: 1px;
+transition: 0.3s;
 
 &:hover{
     border: 0.1px solid rgba(255,255,255,0.05);
     filter: brightness(1.05);
+    transform: scale(1.01);
 }
  
+`
+
+export const TitleContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 25px;
+  h1{
+    color: ${({theme}) => theme.colors.text};
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+  }
+  h3{
+    color: ${({theme}) => theme.colors.secondaryText};
+    font-size: 14px;
+  }
 `
