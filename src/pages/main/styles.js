@@ -26,27 +26,50 @@ export const SectionContainer = styled.section`
     display: flex;
     flex-direction:  column;
 
-    width: 50%;
+    width: 45%;
     justify-content: space-around;
     height: auto;
   }
   .image-container{
-    display: flex;
-    flex-direction: row;
+
+
     height: auto;
     width: 45%;
-    justify-content: flex-end;
-    align-items: center;
     animation: floating 5s ease-in-out infinite;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .image{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: absolute;
+
+&:nth-child(1){
+
+  animation: blinkImage 0.85s ease-in-out  infinite;
+}
 
 
+
+img{
+
+width: 65%;
+height: 65%;
+    }
   }
-  .image-container > svg{
-    height:85%;
-    width: 85%;
-    z-index: 5;
-    background-color: aliceblue;
-  }
+
+  @keyframes blinkImage {
+        from {
+         opacity: 1;
+        }
+        to {
+          opacity: 0;
+        }
+      }
 
   @keyframes floating {
     0% { transform: translate(0,  0px); }
@@ -57,7 +80,7 @@ export const SectionContainer = styled.section`
   .text-container > h1{
     color: ${({theme}) => theme.colors.text};
     margin-bottom: 10px;
-    font-size: 28px;
+    font-size: 25px;
     font-weight: 900;
   }
 
@@ -65,7 +88,7 @@ export const SectionContainer = styled.section`
 
         white-space: nowrap;
         overflow: hidden;
-        animation: typewriter 5s steps(25) infinite alternate,
+        animation: typewriter 5s steps(25),
           blink 800ms steps(20) infinite normal;
         border-right: 2px solid ${({theme}) => theme.colors.primary};
       }
@@ -73,7 +96,7 @@ export const SectionContainer = styled.section`
         0% {
           width: 0%;
         }
-        95% {
+        100% {
           width: 100%;
         }
 
@@ -88,9 +111,10 @@ export const SectionContainer = styled.section`
         }
       }
   .text-container > p{
+    width: 95%;
     color: ${({theme}) => theme.colors.secondaryText};
 
-font-size: 15px;
+font-size: 14px;
 font-weight: 500;
   }
 
@@ -293,7 +317,7 @@ export const Information= styled.div`
     flex: 1;
   text-align: ${props => (props.inverse ? 'right' : 'left')};
   height: 100%;
-  width: 40%;
+  width: 45%;
   align-items: center;
   justify-content: flex-start;
   display: flex;
@@ -306,7 +330,7 @@ export const Information= styled.div`
     height: auto;
   }
   .image-container{
-    width: 60%;
+    width: 40%;
     justify-content: ${props => (!props.inverse ? 'flex-end' : 'flex-start')};
   }
 

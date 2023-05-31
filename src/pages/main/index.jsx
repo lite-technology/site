@@ -1,5 +1,6 @@
 import React from 'react';
-import icon from '../../assets/imgs/isometric-notebook.svg'
+import raio from '../../assets/imgs/animation/raio.svg'
+import corpo from '../../assets/imgs/animation/corpo.svg'
 
 
 
@@ -44,11 +45,16 @@ const Main = () => {
             <Container>
                <SectionContainer>
                 <div class="text-container">
-                    <h1>A inovação na velocidade que você precisa.</h1>
+                    <h1>A inovação na velocidade que você precisa!</h1>
                     <p>Acelere sua empresa rumo ao sucesso com inovação de alta qualidade, elevando seu negócio a novos patamares de conquistas. Despertando potencial em busca de resultados extraordinários.</p>
                 </div>
                  <div class="image-container">
-                    <img src={icon} alt="Lite technology" />
+                  <div className="image raio">
+                    <img src={raio} alt="raio" />
+                  </div>
+                  <div className="image">
+                    <img src={corpo} alt="corpo" />
+                  </div>
                  </div>
                </SectionContainer>
                {informationData.map((item, index) => (

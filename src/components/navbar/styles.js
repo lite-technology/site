@@ -35,7 +35,7 @@ z-index: 10;
     align-items: center;
   }
 
-  .links > svg {
+  .links > a > svg {
     margin-left: 10px;
     color: ${({theme}) => theme.colors.text};
 
