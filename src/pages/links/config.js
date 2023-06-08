@@ -1,19 +1,24 @@
 export const data = [
-  {
-    text: 'Site',
-    url: "https://litetechnology.com"
-  },
+    {
+      text: 'Site',
+      url: "https://litetechnology.space"
+    },
+    {
+      text: 'Contato',
+      url: "https://wa.me/message/REEAHEE2K24EO1"
+    },
     {
       text: 'Instagram',
       url: "https://www.instagram.com/litetechnology/"
     },
     {
       text: 'Github',
-      url: "https://youtube.com"
+      url: "https://github.com/lite-technology"
     },
     {
-      text: 'Discord',
-      url: "https://youtube.com"
+      text: 'Nossa comunidade',
+      url: "https://discord.gg/JwPqa3a23X"
     },
+
   ];
 
