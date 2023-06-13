@@ -8,8 +8,13 @@ padding:  ${({theme}) => theme.sizes.containerPadding};
   height: auto;
 padding-top: 10vh;
 
-
-
+.contato{
+  position: fixed;
+  right: 1vw;
+  bottom: 5vh;
+  width: 50px;
+  height: auto;
+}
 `
 
 export const SectionContainer = styled.section`
@@ -334,5 +339,14 @@ export const Information= styled.div`
     justify-content: ${props => (!props.inverse ? 'flex-end' : 'flex-start')};
   }
 
+`;
+
+export const ContactSection = styled.div`
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+min-height: 85vh;
+height: auto;
+width: 100%;
 `;
 

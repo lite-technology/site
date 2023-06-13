@@ -1,15 +1,16 @@
 import React from 'react';
 import raio from '../../assets/imgs/animation/raio.svg'
 import corpo from '../../assets/imgs/animation/corpo.svg'
+import { FaWhatsappSquare } from 'react-icons/fa'
 
 
 
-
+import ContactForm from '../../components/form';
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
 
-import { Container, SectionContainer, ServiceContainer, TitleContainer, Information} from './styles';
-import { serviceData, informationData } from './config';
+import { Container, SectionContainer, ServiceContainer, TitleContainer, Information, ContactSection} from './styles';
+import { serviceData, informationData, whastapp } from './config';
 const ServiceCard = ({ image, title, description, url }) => {
   return (
     <div className="card">
@@ -43,6 +44,9 @@ const Main = () => {
         <>
             <Navbar />
             <Container>
+            <a className="contato" href={whastapp} target='_blanck'>
+               <FaWhatsappSquare size={45} color='#25d366'/>
+            </a>
                <SectionContainer>
                 <div class="text-container">
                     <h1>A inovação na velocidade que você precisa!</h1>
@@ -86,6 +90,13 @@ const Main = () => {
                 </div>
                </ServiceContainer>
 
+               <ContactSection>
+                <TitleContainer>
+                    <h1>Contato</h1>
+                    <h3>Envie-nos seu numero para entrarmos em contato</h3>
+                  </TitleContainer>
+                  <ContactForm/>
+               </ContactSection>
 
             </Container>
         </>

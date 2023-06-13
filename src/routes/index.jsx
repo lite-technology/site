@@ -10,6 +10,7 @@ import Links from "../pages/links";
       <BrowserRouter>
         <Routes>
           <Route path="/links" element={<Links />}/>
+          <Route path="/visite-card" element={<Links />}/>
           <Route path="/" element={<Main />}/>
           <Route path="*" element={<Error />}/>
         </Routes>

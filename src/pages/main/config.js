@@ -44,19 +44,21 @@ export const serviceData = [
 
 export const informationData = [
     {
-      text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum repellendus sed temporibus ratione sunt, expedita mollitia nesciunt illum tenetur quis, dolorem necessitatibus distinctio, hic in.',
+      text: 'Bem-vindo ao nosso mundo digital! Somos especializados em desenvolvimento de sites e sistemas, prontos para levar o seu negócio para o próximo nível. Vamos impulsionar a sua presença online e ajudar você a alcançar seus objetivos.',
       image: information1,
     },
     {
-      text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum repellendus sed temporibus ratione sunt, expedita mollitia nesciunt illum tenetur quis, dolorem necessitatibus distinctio, hic in.',
+      text: 'Transforme sua presença online em resultados reais. Vamos além do design, focando em estratégias eficazes e otimização de mecanismos de busca. Destaque-se da concorrência e alcance seus clientes em potencial.',
       image: information2,
     },
     {
-      text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum repellendus sed temporibus ratione sunt, expedita mollitia nesciunt illum tenetur quis, dolorem necessitatibus distinctio, hic in.',
+      text: 'Automatize e otimize seus processos. Com bots personalizados, você terá um atendimento automatizado e personalizado, melhorando a eficiência operacional e a experiência do cliente.',
       image: information3,
     },
     {
-      text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum repellendus sed temporibus ratione sunt, expedita mollitia nesciunt illum tenetur quis, dolorem necessitatibus distinctio, hic in.',
+      text: 'Sua jornada para o sucesso começa aqui. Com estratégias personalizadas de captura de clientes e funis de vendas, vamos gerar crescimento e resultados tangíveis para o seu negócio. Seja parte da nossa história de sucesso.',
       image: information4,
     },
   ];
+
+export const whastapp = "https://wa.me/message/REEAHEE2K24EO1";
