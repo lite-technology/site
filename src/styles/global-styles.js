@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import { getColorFromTheme } from "../assets/utils/styled";
+import { getColorFromTheme } from "@assets/utils/styled";
 
 export const GlobalStyle = createGlobalStyle`
 * {
@@ -27,7 +27,9 @@ html {
 }
 
 body {
-  color: ${getColorFromTheme('text')};
-  background-color: ${getColorFromTheme('background')};
+  color: ${getColorFromTheme("text")};
+  background-color: ${getColorFromTheme("background")};
+  transition-property: background-color, color;
+  transition-duration: .2s;
 }
 `;

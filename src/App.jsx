@@ -1,14 +1,11 @@
-import { ThemeProvider } from "styled-components";
-
 import Router from "./routes";
-import { dark, GlobalStyle, palette } from "./styles";
+import { PaletteProvider } from "./contexts/theme.context";
 
 function App() {
     return (
-        <ThemeProvider theme={{ ...dark, ...palette }}>
-            <GlobalStyle />
+        <PaletteProvider>
             <Router />
-        </ThemeProvider>
+        </PaletteProvider>
     );
 }
 
