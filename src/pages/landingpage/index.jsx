@@ -1,4 +1,4 @@
-import { LogoTextLite } from "../../components/micro/svgs";
+import { LogoTextLite } from "@components/micro/svgs";
 
 const LandingPage = () => {
     return (
