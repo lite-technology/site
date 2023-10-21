@@ -15,7 +15,7 @@ export default defineConfig({
         '@': thisPathTo('src'),
         '@assets': thisPathTo('src', 'assets'),
         '@components': thisPathTo('src', 'components'),
-        '@hooks': thisPathTo('src', 'hooks'),
+        '@contexts': thisPathTo('src', 'contexts'),
         '@pages': thisPathTo('src', 'pages'),
         '@styles': thisPathTo('src', 'styles'),
     },
