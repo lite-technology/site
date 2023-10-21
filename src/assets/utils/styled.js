@@ -1,1 +1,1 @@
-export const getColorFromTheme = (color) => ({ theme }) => theme.colors[color];
+export const getColorFromPalette = (color) => ({ theme }) => theme.palette[color];
