@@ -1,22 +1,16 @@
-import { BrowserRouter, Routes, Route, } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Error from "../pages/error";
-import Main from '../pages/main';
-import Links from "../pages/links";
+import LandingPage from "../pages/landingpage";
 
+export const Router = () => {
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<LandingPage />} />
+                <Route path="*" element={<h1>Error!</h1>} />
+            </Routes>
+        </BrowserRouter>
+    );
+};
 
-  export const Router = () => {
-    return(
-      <BrowserRouter>
-        <Routes>
-          <Route path="/links" element={<Links />}/>
-          <Route path="/visite-card" element={<Links />}/>
-          <Route path="/" element={<Main />}/>
-          <Route path="*" element={<Error />}/>
-        </Routes>
-      </BrowserRouter>
-    )
-  }
-
-
-  export default Router
+export default Router;
