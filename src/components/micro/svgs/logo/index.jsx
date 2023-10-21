@@ -2,7 +2,7 @@ import { Svg } from './style';
 
 export const LogoTextLite = () => {
     return (
-        <Svg xmlns="http://www.w3.org/2000/svg" width="343" height="94" viewBox="0 0 343 94" fill='white'>
+        <Svg xmlns="http://www.w3.org/2000/svg" width="343" height="94" viewBox="0 0 343 94">
             <path d="M0 93.0909V0H25.2727V72.7273H62.9091V93.0909H0Z" />
             <path d="M159.03 20.3636V0H239.939V20.3636H211.939V93.0909H187.03V20.3636H159.03Z" />
             <path d="M275.05 93.0909V0H342.141V20.3636H300.323V36.3636H338.686V56.7273H300.323V72.7273H341.959V93.0909H275.05Z" />
