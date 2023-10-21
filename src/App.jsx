@@ -1,11 +1,11 @@
 import { ThemeProvider } from "styled-components";
 
 import Router from "./routes";
-import { dark, GlobalStyle } from "./styles";
+import { dark, GlobalStyle, palette } from "./styles";
 
 function App() {
     return (
-        <ThemeProvider theme={dark}>
+        <ThemeProvider theme={{ ...dark, ...palette }}>
             <GlobalStyle />
             <Router />
         </ThemeProvider>

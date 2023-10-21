@@ -27,7 +27,6 @@ html {
 }
 
 body {
-  font-family: 'Karla','Ubuntu', sans-serif;
   color: ${getColorFromTheme('text')};
   background-color: ${getColorFromTheme('background')};
 }

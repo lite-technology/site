@@ -1,4 +1,4 @@
-const general = {
+export const palette = {
     blue200: '#0047ff',
     light100: '#ffffff',
     light200: '#eeeeee',
@@ -13,10 +13,10 @@ export const dark = {
     theme: 'dark',
 
     colors: {
-        border: general.dark100,
-        text: general.light100,
-        background: general.dark300,
-        cardBackground: general.dark200,
+        border: palette.dark100,
+        text: palette.light100,
+        background: palette.dark300,
+        cardBackground: palette.dark200,
     },
 };
 
@@ -24,9 +24,9 @@ export const light = {
     theme: 'light',
 
     colors: {
-        border: general.light300,
-        text: general.dark300,
-        background: general.light100,
-        cardBackground: general.light100,
+        border: palette.light300,
+        text: palette.dark300,
+        background: palette.light100,
+        cardBackground: palette.light100,
     },
 };
