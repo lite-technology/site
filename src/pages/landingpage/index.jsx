@@ -5,7 +5,7 @@ const LandingPage = () => {
     return (
         <>
             <FloatingHeaderStyled>
-                <LetteringLogo />
+                <LetteringLogo to={'/'} />
 
                 <BlueLightLinkStyled to={'/'}>
                     Contato
