@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import { getColorFromStyled } from "@assets/utils/styled";
+import { getThemeProperty } from "@assets/utils/styled";
 
 export const GlobalStyle = createGlobalStyle`
 * {
@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 ::-webkit-scrollbar-track {
-    background-color: ${getColorFromStyled("cardBackground", "theme")};
+    background-color: ${getThemeProperty("cardBackground", "theme")};
 }
 
 ::-webkit-scrollbar {
@@ -21,14 +21,14 @@ export const GlobalStyle = createGlobalStyle`
 
 ::-webkit-scrollbar-thumb {
     border-radius: 20px;
-    border: 1px solid ${getColorFromStyled("cardBackground", "theme")};
-    background: ${getColorFromStyled("blue200")};
+    border: 1px solid ${getThemeProperty("cardBackground", "theme")};
+    background: ${getThemeProperty("blue200")};
 }
 
 html {
     scroll-behavior: smooth;
-    color: ${getColorFromStyled("text", "theme")};
-    background-color: ${getColorFromStyled("background", "theme")};
+    color: ${getThemeProperty("text", "theme")};
+    background-color: ${getThemeProperty("background", "theme")};
 }
 
 body {
@@ -69,7 +69,7 @@ input {
     border: none;
 
     &:focus {
-        outline: 2px solid rgba(${getColorFromStyled("purple", "paletteRGB")}, 0.71);
+        outline: 2px solid rgba(${getThemeProperty("purple", "paletteRGB")}, 0.71);
         outline-offset: 0;
     }
 }

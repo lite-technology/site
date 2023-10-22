@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
-import { getColorFromStyled } from "@assets/utils/styled";
+import { getThemeProperty } from "@assets/utils/styled";
 
 export const LinkStyled = styled(Link)`
 position: relative;
@@ -21,7 +21,7 @@ z-index: 1;
 
 &:hover::before {
     box-shadow:
-        0 0 12px rgba(${getColorFromStyled("blue", "paletteRGB")}, 1),
-        0 0 24px rgba(${getColorFromStyled("blue", "paletteRGB")}, 1);
+        0 0 12px rgba(${getThemeProperty("blue", "paletteRGB")}, 1),
+        0 0 24px rgba(${getThemeProperty("blue", "paletteRGB")}, 1);
 }
 `;

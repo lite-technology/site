@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import { ThemeProvider } from "styled-components";
-import { dark, light, palette, paletteRGB, GlobalStyle } from "@styles";
+import { layout, dark, light, palette, paletteRGB, GlobalStyle } from "@styles";
 
 export const ThemeContext = createContext({});
 
@@ -35,7 +35,7 @@ export const PaletteProvider = ({ children }) => {
 
     return (
         <ThemeContext.Provider value={{ toggleTheme }}>
-            <ThemeProvider theme={{ theme, palette, paletteRGB }}>
+            <ThemeProvider theme={{ theme, palette, paletteRGB, layout }}>
                 <GlobalStyle />
                 {children}
             </ThemeProvider>

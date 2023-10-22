@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { getColorFromStyled } from "@assets/utils/styled";
+import { getThemeProperty } from "@assets/utils/styled";
 
 export const SvgStyled = styled.svg`
 display: block;
@@ -13,6 +13,6 @@ path {
 }
 
 &:hover .ray {
-    fill: ${getColorFromStyled('blue200')};
+    fill: ${getThemeProperty('blue200')};
 }
 `;
