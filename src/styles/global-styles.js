@@ -78,5 +78,6 @@ button, a {
 
 a {
     color: inherit;
+    text-decoration: none;
 }
 `;
