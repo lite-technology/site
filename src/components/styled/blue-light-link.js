@@ -15,7 +15,7 @@ padding: .75rem 1.5rem;
 border-radius: 100px;
 color: ${getColorFromStyled("light100")};
 background-color: ${getColorFromStyled("blue200")};
-transition: box-shadow .2s ease-out;
+transition: box-shadow .170s ease-out;
 
 font-weight: bold;
 
