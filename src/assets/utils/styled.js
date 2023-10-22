@@ -1,2 +1,5 @@
-export const getColorFromPalette = (color) => ({ theme }) => theme.palette[color];
-export const getColorFromTheme = (color) => ({ theme }) => theme.theme[color];
+export const getColorFromStyled = (property, context = 'palette') => {
+    return ({ theme }) => {
+        return theme[context][property];
+    };
+};
