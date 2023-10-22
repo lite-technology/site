@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #363636;
+    background-color: ${getColorFromStyled("cardBackground", "theme")};
 }
 
 ::-webkit-scrollbar {
@@ -20,8 +20,9 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 ::-webkit-scrollbar-thumb {
-    background: red;
-    border-radius: 6px;
+    border-radius: 20px;
+    border: 1px solid ${getColorFromStyled("cardBackground", "theme")};
+    background: ${getColorFromStyled("blue200")};
 }
 
 html {
