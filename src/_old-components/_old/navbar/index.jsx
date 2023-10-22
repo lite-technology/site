@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import logo from '../../assets/imgs/logo.png';
 import blueLogo from '../../assets/imgs/blue-logo.png';
 import { AiFillInstagram, AiOutlineGithub, GoLogoGist} from 'react-icons/all'
-import {theme}  from '../../styles/theme'
+import {theme}  from '../../../styles/theme'
 
 import { Container } from './styles';
 
@@ -18,7 +18,7 @@ return (
 					<div onClick={() => navigate('/')} onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} >
 						{
 							hover ? <img src={blueLogo}  alt='lite technology' /> : <img src={logo}  alt='lite technology' />
-						}	
+						}
 					</div>
 				 </div>
 				 <div class='subContainer links'>

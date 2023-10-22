@@ -1,10 +1,17 @@
-import { LogoTextLite } from "@components/micro/svgs";
+import { LetteringLogo } from '../../components/micro';
+import { BlueLightLinkStyled, FloatingHeaderStyled } from '../../components/styled';
 
 const LandingPage = () => {
     return (
-        <main>
-            <LogoTextLite />
-        </main>
+        <>
+            <FloatingHeaderStyled>
+                <LetteringLogo />
+
+                <BlueLightLinkStyled to={'/'}>
+                    Contato
+                </BlueLightLinkStyled>
+            </FloatingHeaderStyled>
+        </>
     );
 };
 
