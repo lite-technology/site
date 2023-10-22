@@ -4,7 +4,8 @@ import { getThemeProperty } from "@assets/utils/styled";
 export const LegalFooterStyled = styled.footer`
 display: flex;
 align-items: center;
-justify-content: space-between;
+justify-content: center;
+gap: 1rem;
 
 margin: 1rem auto;
 padding: 1rem 2.5rem;

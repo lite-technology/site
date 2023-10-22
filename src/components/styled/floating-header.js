@@ -8,6 +8,7 @@ top: 1rem;
 display: flex;
 align-items: center;
 justify-content: space-between;
+gap: 1rem;
 
 margin: 1rem auto;
 padding: 1.2rem 2.5rem;
