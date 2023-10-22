@@ -1,5 +1,6 @@
-import { LetteringLogo } from '../../components/micro';
-import { BlueLightLinkStyled, FloatingHeaderStyled } from '../../components/styled';
+import { LetteringLogo, ExternalLink } from '../../components/micro';
+import { BlueLightLinkStyled, FloatingHeaderStyled, LegalFooterStyled } from '../../components/styled';
+import { AiFillInstagram, AiFillGithub } from 'react-icons/ai';
 
 const LandingPage = () => {
     return (
@@ -7,10 +8,19 @@ const LandingPage = () => {
             <FloatingHeaderStyled>
                 <LetteringLogo to={'/'} />
 
-                <BlueLightLinkStyled to={'/'}>
+                <BlueLightLinkStyled to={'#contact'}>
                     Contato
                 </BlueLightLinkStyled>
             </FloatingHeaderStyled>
+
+            <LegalFooterStyled>
+                <ExternalLink href="https://www.instagram.com/litetechnology/">
+                    <AiFillInstagram /> Instagram
+                </ExternalLink>
+                <ExternalLink href="https://github.com/lite-technology">
+                    <AiFillGithub /> GitHub
+                </ExternalLink>
+            </LegalFooterStyled>
         </>
     );
 };
