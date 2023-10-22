@@ -26,11 +26,12 @@ export const GlobalStyle = createGlobalStyle`
 
 html {
     scroll-behavior: smooth;
+    color: ${getColorFromStyled("text", "theme")};
+    background-color: ${getColorFromStyled("background", "theme")};
 }
 
 body {
-    color: ${getColorFromStyled("text", "theme")};
-    background-color: ${getColorFromStyled("background", "theme")};
+    scroll-behavior: smooth;
     transition-property: background-color, color;
     transition-duration: .2s;
     line-height: 1;
