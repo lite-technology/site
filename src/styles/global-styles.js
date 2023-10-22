@@ -81,5 +81,6 @@ button, a {
 a {
     color: inherit;
     text-decoration: none;
+    transition: color .2s ease-out;
 }
 `;

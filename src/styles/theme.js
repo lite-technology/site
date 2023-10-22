@@ -30,3 +30,7 @@ export const light = {
     background: palette.light100,
     cardBackground: palette.light200,
 };
+
+export const layout = {
+    maxScreenWidth: '1440px',
+};
