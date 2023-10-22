@@ -10,19 +10,18 @@ z-index: 1;
     position: absolute;
     content: '';
     top: 0;
-    left: 27%;
-    width: 12%;
+    left: 31%;
+    width: 4%;
     height: 100%;
     z-index: -1;
     border-radius: 100%;
-    background-color: ${getColorFromStyled("blue200")};
-    transform: rotateZ(35deg);
-    filter: blur(17px);
-    opacity: 0;
-    transition: opacity .2s ease-out;
+    transform: rotateZ(31deg);
+    transition: box-shadow .2s ease-out;
 }
 
 &:hover::before {
-    opacity: 1;
+    box-shadow:
+        0 0 12px rgba(${getColorFromStyled("blue", "paletteRGB")}, 1),
+        0 0 24px rgba(${getColorFromStyled("blue", "paletteRGB")}, 1);
 }
 `;
