@@ -16,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 ::-webkit-scrollbar {
-    width: 6px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -37,6 +37,39 @@ body {
     transition-duration: .2s;
     line-height: 1;
     font-family: 'Karla','Ubuntu', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    font-family: 'Commissioner', sans-serif;
+}
+
+h1, h2, h3 {
+    font-weight: 900;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: 1.3rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.9rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h1 {
+    font-size: 2.7rem;
 }
 
 article, aside, details, figcaption, figure,
@@ -69,7 +102,10 @@ input {
     border: none;
 
     &:focus {
-        outline: 2px solid rgba(${getThemeProperty("purple", "paletteRGB")}, 0.71);
+        outline: 2px solid rgba(${getThemeProperty(
+            "purple",
+            "paletteRGB"
+        )}, 0.71);
         outline-offset: 0;
     }
 }
