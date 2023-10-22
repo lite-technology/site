@@ -1,46 +1,41 @@
 import { createContext, useEffect, useState } from "react";
-import { ThemeProvider } from 'styled-components';
-import { dark, light, palette, GlobalStyle } from '@styles';
+import { ThemeProvider } from "styled-components";
+import { dark, light, palette, paletteRGB, GlobalStyle } from "@styles";
 
 export const ThemeContext = createContext({});
 
 export const PaletteProvider = ({ children }) => {
-    const [theme, setTheme] = useState(light);
     const storageKey = "litetechnology_theme";
-
-    function saveTheme(theme) {
-        localStorage.setItem(storageKey, JSON.stringify(theme));
-        setTheme(theme);
-    }
-
-    function toggleTheme() {
-        let selectedTheme;
-
-        selectedTheme = theme.current === "dark" ? light : dark;
-        saveTheme(selectedTheme);
-    }
-
-    function useSavedTheme() {
-        const storage = localStorage.getItem(storageKey);
-        let selectedTheme;
-
-        if (!storage) {
-            selectedTheme = light;
-        } else {
-            const parseTheme = JSON.parse(storage);
-            selectedTheme = parseTheme;
-        }
-
-        saveTheme(selectedTheme);
-    }
+    const [theme, setTheme] = useState(getThemeFromLocalStorage);
 
     useEffect(() => {
-        useSavedTheme();
-    }, []);
+        localStorage.setItem(storageKey, JSON.stringify(theme));
+    }, [theme]);
+
+    function toggleTheme() {
+        setTheme(theme.title === "dark" ? light : dark);
+    }
+
+    function getThemeFromLocalStorage() {
+        const storageValue = localStorage.getItem(storageKey);
+
+        if (storageValue) {
+            return JSON.parse(storageValue);
+        }
+
+        if (window.matchMedia) {
+            const prefersDark = window.matchMedia(
+                "(prefers-color-scheme: dark)"
+            ).matches;
+            return prefersDark ? dark : light;
+        }
+
+        return light;
+    }
 
     return (
         <ThemeContext.Provider value={{ toggleTheme }}>
-            <ThemeProvider theme={{ theme, palette }}>
+            <ThemeProvider theme={{ theme, palette, paletteRGB }}>
                 <GlobalStyle />
                 {children}
             </ThemeProvider>
