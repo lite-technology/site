@@ -18,5 +18,5 @@ max-width: calc(100% - 2rem);
 border: 1px solid ${getThemeProperty("border", "theme")};
 border-radius: 20rem;
 background-color: ${getThemeProperty("cardBackground", "theme")};
-box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
 `;
