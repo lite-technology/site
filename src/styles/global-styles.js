@@ -29,6 +29,7 @@ html {
     scroll-behavior: smooth;
     color: ${getThemeProperty("text", "theme")};
     background-color: ${getThemeProperty("background", "theme")};
+    background-image: url(/svgs/square-${getThemeProperty("title", "theme")}.svg);
 }
 
 body {
