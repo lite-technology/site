@@ -34,7 +34,7 @@ export const PaletteProvider = ({ children }) => {
     }
 
     return (
-        <ThemeContext.Provider value={{ toggleTheme }}>
+        <ThemeContext.Provider value={{ toggleTheme, currentTheme: theme.title }}>
             <ThemeProvider theme={{ theme, palette, paletteRGB, layout }}>
                 <GlobalStyle />
                 {children}
