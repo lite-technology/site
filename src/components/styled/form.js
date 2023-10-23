@@ -5,7 +5,8 @@ export const FormStyled = styled.form`
 display: flex;
 flex-direction: column;
 
-padding: 3rem 1rem;
+margin: 3rem auto;
+padding: 3.5rem 1rem 2.5rem;
 width: 320px;
 max-width: 100%;
 border: 1px solid ${getThemeProperty("border", "theme")};
