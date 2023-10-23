@@ -1,5 +1,6 @@
 import ContactForm from "@components/macro/contact-form";
 import SolutionsContainer from "@components/macro/solutions-container";
+import AboutMarketing from "@components/macro/about-marketing";
 import { FloatingHeader, ExternalLink } from "@components/micro";
 import { LegalFooterStyled, SectionStyled } from "@components/styled";
 import { AiFillInstagram, AiFillGithub } from "react-icons/ai";
@@ -8,6 +9,10 @@ const LandingPage = () => {
     return (
         <>
             <FloatingHeader />
+
+            <SectionStyled>
+                <AboutMarketing />
+            </SectionStyled>
 
             <SectionStyled>
                 <SolutionsContainer />
