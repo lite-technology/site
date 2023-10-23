@@ -18,7 +18,7 @@ export const SolutionsCard = (props) => {
         <CardSolutions>
             <h5>{category}</h5>
 
-            {solutions.map((data, ) => (<Solution key={data.title} {...data} />))}
+            {solutions.map((data, index) => (<Solution key={index} {...data} />))}
         </CardSolutions>
     );
 };
