@@ -99,8 +99,9 @@ table {
 
 button, a,
 input {
-    background: none;
+    color: ${getThemeProperty("text", "theme")};
     border: none;
+    background: none;
 
     &:focus {
         outline: 2px solid rgba(${getThemeProperty(
@@ -113,6 +114,12 @@ input {
 
 button, a {
     cursor: pointer;
+}
+
+input {
+    &::placeholder {
+        color: ${getThemeProperty("gray100")};
+    }
 }
 
 a {
