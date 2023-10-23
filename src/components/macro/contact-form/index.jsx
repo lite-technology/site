@@ -1,5 +1,5 @@
-import { LongTextInput, ShortTextInput } from "../micro";
-import { ButtonBlueLightStyled, FormStyled } from "../styled";
+import { LongTextInput, ShortTextInput } from "../../micro";
+import { ButtonBlueLightStyled, FormStyled } from "../../styled";
 
 export default () => {
     return (
