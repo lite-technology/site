@@ -30,7 +30,7 @@ export const light = {
     border: palette.light300,
     text: palette.dark300,
     background: palette.light100,
-    cardBackground: palette.light200,
+    cardBackground: palette.light100,
 };
 
 export const layout = {
