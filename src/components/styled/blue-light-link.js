@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
-import { getThemeProperty } from "@assets/utils/styled";
+import { getThemeProperty } from "@helpers/utilities";
 
 const BlueLight = css`
 position: relative;

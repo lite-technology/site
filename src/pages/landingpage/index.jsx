@@ -1,6 +1,6 @@
-import ContactForm from "../../components/macro/contact-form";
-import { FloatingHeader, ExternalLink } from "../../components/micro";
-import { LegalFooterStyled, SectionStyled } from "../../components/styled";
+import ContactForm from "@components/macro/contact-form";
+import { FloatingHeader, ExternalLink } from "@components/micro";
+import { LegalFooterStyled, SectionStyled } from "@components/styled";
 import { AiFillInstagram, AiFillGithub } from "react-icons/ai";
 
 const LandingPage = () => {

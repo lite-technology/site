@@ -13,7 +13,7 @@ export default defineConfig({
   resolve: {
     alias: {
         '@': thisPathTo('src'),
-        '@assets': thisPathTo('src', 'assets'),
+        '@helpers': thisPathTo('src', 'helpers'),
         '@components': thisPathTo('src', 'components'),
         '@contexts': thisPathTo('src', 'contexts'),
         '@pages': thisPathTo('src', 'pages'),

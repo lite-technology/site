@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { getThemeProperty } from '../../../assets/utils/styled';
+import { getThemeProperty } from '@helpers/utilities';
 
 export default styled.a`
 display: flex;

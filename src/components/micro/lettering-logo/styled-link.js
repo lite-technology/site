@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
-import { getThemeProperty } from "@assets/utils/styled";
+import { getThemeProperty } from "@helpers/utilities";
 
 export const LinkStyled = styled(Link)`
 position: relative;

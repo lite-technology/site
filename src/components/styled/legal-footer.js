@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { getThemeProperty } from "@assets/utils/styled";
+import { getThemeProperty } from "@helpers/utilities";
 
 export const LegalFooterStyled = styled.footer`
 display: flex;

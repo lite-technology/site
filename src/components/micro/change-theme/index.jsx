@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
-import { ThemeContext } from "../../../contexts/theme.context";
+import { ThemeContext } from "@contexts/theme.context";
 import { ButtonStyled } from './styled-button';
 
 export const ChangeTheme = () => {
