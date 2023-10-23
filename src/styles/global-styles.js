@@ -98,7 +98,7 @@ table {
 }
 
 button, a,
-input {
+input, textarea {
     color: ${getThemeProperty("text", "theme")};
     border: none;
     background: none;
@@ -116,6 +116,7 @@ button, a {
     cursor: pointer;
 }
 
+textarea,
 input {
     &::placeholder {
         color: ${getThemeProperty("gray100")};
