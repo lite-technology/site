@@ -1,5 +1,10 @@
-import { BsPersonFillUp } from 'react-icons/bs';
-import { TitleStyled, RedoIconStyled, ParagraphStryled, ContainerStyled } from './styled-content';
+import { BsPersonFillUp } from "react-icons/bs";
+import {
+    TitleStyled,
+    RedoIconStyled,
+    ParagraphStryled,
+    ContainerStyled,
+} from "./styled-content";
 
 export default () => {
     return (
