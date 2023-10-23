@@ -26,5 +26,6 @@ font-weight: bold;
 }
 `;
 
+export const HtmlLinkBlueLightStyled = styled.a`${BlueLight}`;
 export const LinkBlueLightStyled = styled(Link)`${BlueLight}`;
 export const ButtonBlueLightStyled = styled.button`${BlueLight}`;

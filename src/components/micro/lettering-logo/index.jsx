@@ -4,8 +4,14 @@ import { SvgStyled } from './styled-svg';
 export const LetteringLogo = (props) => {
     const { to } = props;
 
+    function scrolToTop() {
+        if (window.scrollTo) {
+            window.scrollTo(0, 0);
+        }
+    }
+
     return (
-        <LinkStyled to={to}>
+        <LinkStyled to={to || '/'} onClick={scrolToTop}>
             <SvgStyled xmlns="http://www.w3.org/2000/svg" viewBox="0 0 343 94">
                 <path d="M0 93.0909V0H25.2727V72.7273H62.9091V93.0909H0Z" />
                 <path d="M159.03 20.3636V0H239.939V20.3636H211.939V93.0909H187.03V20.3636H159.03Z" />

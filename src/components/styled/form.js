@@ -5,9 +5,10 @@ export const FormStyled = styled.form`
 display: flex;
 flex-direction: column;
 
+scroll-margin-top: 7rem;
 margin: 3rem auto;
-padding: 3.5rem 1rem 2.5rem;
-width: 320px;
+padding: 3rem 1rem 2.5rem;
+width: 398px;
 max-width: 100%;
 border: 1px solid ${getThemeProperty("border", "theme")};
 border-radius: 1rem;
@@ -32,9 +33,15 @@ background-color: ${getThemeProperty("cardBackground", "theme")};
 }
 
 &.was-validated {
+    textarea:invalid ~ .invalid-feedback,
+    textarea:valid ~ .valid-feedback,
     input:invalid ~ .invalid-feedback,
     input:valid ~ .valid-feedback {
         display: block;
     }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 2rem;
 }
 `;
