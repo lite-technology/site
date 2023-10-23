@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { getThemeProperty } from "@assets/utils/styled";
 
-export const FloatingHeaderStyled = styled.header`
+export const HeaderStyled = styled.header`
 position: sticky;
 top: 1rem;
 z-index: 1050;

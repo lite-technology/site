@@ -1,26 +1,12 @@
 import ContactForm from "../../components/macro/contact-form";
-import {
-    LetteringLogo,
-    ExternalLink,
-} from "../../components/micro";
-import {
-    HtmlLinkBlueLightStyled,
-    FloatingHeaderStyled,
-    LegalFooterStyled,
-    SectionStyled,
-} from "../../components/styled";
+import { FloatingHeader, ExternalLink } from "../../components/micro";
+import { LegalFooterStyled, SectionStyled } from "../../components/styled";
 import { AiFillInstagram, AiFillGithub } from "react-icons/ai";
 
 const LandingPage = () => {
     return (
         <>
-            <FloatingHeaderStyled>
-                <LetteringLogo />
-
-                <HtmlLinkBlueLightStyled href={"/#contact"}>
-                    Contato
-                </HtmlLinkBlueLightStyled>
-            </FloatingHeaderStyled>
+            <FloatingHeader />
 
             <SectionStyled>
                 <ContactForm />
