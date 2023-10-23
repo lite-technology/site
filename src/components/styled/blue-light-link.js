@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
 import { getThemeProperty } from "@assets/utils/styled";
 
-export const BlueLightLinkStyled = styled(Link)`
+const BlueLight = css`
 position: relative;
 z-index: 1;
 
@@ -25,3 +25,6 @@ font-weight: bold;
         0 .1rem 1rem rgba(${getThemeProperty("blue", "paletteRGB")}, .3);
 }
 `;
+
+export const LinkBlueLightStyled = styled(Link)`${BlueLight}`;
+export const ButtonBlueLightStyled = styled.button`${BlueLight}`;
