@@ -1,5 +1,5 @@
-import { LabelStyled } from "./label";
-import { InputGroupStyled } from "./input-group";
+import { LabelStyled } from "./styled-label";
+import { InputGroupStyled } from "./styled-input-group";
 import { InputStyled, TextareaStyled } from "./styled-input";
 
 export const ShortTextInput = (props) => {
