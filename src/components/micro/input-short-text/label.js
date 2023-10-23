@@ -6,4 +6,8 @@ flex-direction: column;
 gap: .5rem;
 
 margin-bottom: 1rem;
+
+& > div::first-letter {
+    text-transform: uppercase;
+}
 `;
