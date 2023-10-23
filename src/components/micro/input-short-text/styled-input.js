@@ -15,4 +15,7 @@ ${BaseInputStyle}
 
 export const TextareaStyled = styled.textarea`
 ${BaseInputStyle}
+
+max-height: 350px;
+resize: vertical;
 `;
