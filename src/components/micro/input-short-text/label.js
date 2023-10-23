@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export default styled.label`
+export const LabelStyled = styled.label`
 display: flex;
 flex-direction: column;
 gap: .5rem;

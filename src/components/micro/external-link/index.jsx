@@ -1,4 +1,4 @@
-import { LinkStyled } from './styled-link';
+import LinkStyled from './styled-link';
 
 export const ExternalLink = (props) => {
     const { children, href } = props;

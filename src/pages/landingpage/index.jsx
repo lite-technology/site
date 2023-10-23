@@ -1,9 +1,11 @@
-import { LetteringLogo, ShortTextInput, ExternalLink } from "../../components/micro";
+import ContactForm from "../../components/macro/contact-form";
 import {
-    LinkBlueLightStyled,
-    ButtonBlueLightStyled,
+    LetteringLogo,
+    ExternalLink,
+} from "../../components/micro";
+import {
+    HtmlLinkBlueLightStyled,
     FloatingHeaderStyled,
-    FormStyled,
     LegalFooterStyled,
     SectionStyled,
 } from "../../components/styled";
@@ -13,52 +15,15 @@ const LandingPage = () => {
     return (
         <>
             <FloatingHeaderStyled>
-                <LetteringLogo to={"/"} />
+                <LetteringLogo />
 
-                <LinkBlueLightStyled to={"#contact"}>
+                <HtmlLinkBlueLightStyled href={"/#contact"}>
                     Contato
-                </LinkBlueLightStyled>
+                </HtmlLinkBlueLightStyled>
             </FloatingHeaderStyled>
 
             <SectionStyled>
-                <FormStyled onSubmit={(event) => event.preventDefault()} noValidate>
-                    <ShortTextInput
-                        describe="nome"
-                        name="name"
-                        placeholder="ex: Jhon Doe"
-                        invalidFeedback="O nome deve ter de 2 a 24 caracteres. Somente letras."
-                        extraAttributes={{
-                            minLength: 2,
-                            maxLength: 24,
-                            pattern: "^([a-zA-ZÀ-ÿ ]){2,24}$",
-                            required: true,
-                        }}
-                    />
-                    <ShortTextInput
-                        describe="e-mail"
-                        type="email"
-                        name="email"
-                        placeholder="ex: jhondoe@example.com"
-                        invalidFeedback="O formato de e-mail usado é inválido."
-                        extraAttributes={{
-                            required: true,
-                        }}
-                    />
-                    <ShortTextInput
-                        describe="número de contato"
-                        type="tel"
-                        name="tel"
-                        placeholder="ex: (12) 12345-6789"
-                        invalidFeedback="O formato do telefone usado não é conhecido."
-                        extraAttributes={{
-                            required: true,
-                        }}
-                    />
-
-                    <ButtonBlueLightStyled type="submit">
-                        Enviar
-                    </ButtonBlueLightStyled>
-                </FormStyled>
+                <ContactForm />
             </SectionStyled>
 
             <LegalFooterStyled>

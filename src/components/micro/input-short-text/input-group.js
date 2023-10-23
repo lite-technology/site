@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export default styled.div`
+export const InputGroupStyled = styled.div`
 display: flex;
 align-items: flex-start;
 flex-direction: column;
