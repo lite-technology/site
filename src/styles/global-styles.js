@@ -33,9 +33,6 @@ html {
 }
 
 body {
-    scroll-behavior: smooth;
-    transition-property: background-color, color;
-    transition-duration: .2s;
     line-height: 1;
     font-family: 'Karla','Ubuntu', sans-serif;
 }
