@@ -7,7 +7,7 @@ flex-direction: column;
 
 scroll-margin-top: 7rem;
 margin: 3rem auto;
-padding: 3rem 1rem 2.5rem;
+padding: 3rem 1.5rem 2.5rem;
 width: 398px;
 max-width: 100%;
 border: 1px solid ${getThemeProperty("border", "theme")};
