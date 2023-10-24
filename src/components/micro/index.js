@@ -5,3 +5,4 @@ export * from './input-short-text';
 export * from './external-link';
 export * from './floating-header';
 export * from './solution-card';
+export * from './legal-footer';

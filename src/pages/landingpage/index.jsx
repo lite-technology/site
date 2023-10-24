@@ -1,9 +1,8 @@
 import ContactForm from "@components/macro/contact-form";
 import SolutionsContainer from "@components/macro/solutions-container";
 import AboutMarketing from "@components/macro/about-marketing";
-import { FloatingHeader, ExternalLink } from "@components/micro";
-import { LegalFooterStyled, SectionStyled } from "@components/styled";
-import { AiFillInstagram, AiFillGithub } from "react-icons/ai";
+import { FloatingHeader, LegalFooter } from "@components/micro";
+import { SectionStyled } from "@/components/styled";
 
 const LandingPage = () => {
     return (
@@ -22,14 +21,7 @@ const LandingPage = () => {
                 <ContactForm />
             </SectionStyled>
 
-            <LegalFooterStyled>
-                <ExternalLink href="https://www.instagram.com/litetechnology/">
-                    <AiFillInstagram /> Instagram
-                </ExternalLink>
-                <ExternalLink href="https://github.com/lite-technology">
-                    <AiFillGithub /> GitHub
-                </ExternalLink>
-            </LegalFooterStyled>
+            <LegalFooter />
         </>
     );
 };

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { getThemeProperty } from "@helpers/utilities";
 
-export const LegalFooterStyled = styled.footer`
+export const FooterStyled = styled.footer`
 display: flex;
 align-items: center;
 justify-content: center;
