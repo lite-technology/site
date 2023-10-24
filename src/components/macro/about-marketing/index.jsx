@@ -6,7 +6,7 @@ import {
     ParagraphStryled,
     ContainerStyled,
 } from "./styled-content";
-import brands from './brands.data';
+import brandsData from "./brands.data";
 
 export default () => {
     return (
@@ -22,7 +22,7 @@ export default () => {
                 </ParagraphStryled>
             </ContainerStyled>
 
-            {brands.map((data, index) => (<BrandSquare key={index} {...data} />))}
+            {brandsData.map((data, index) => (<BrandSquare key={index} {...data} />))}
         </>
     );
 };

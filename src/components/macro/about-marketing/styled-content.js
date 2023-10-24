@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { IoArrowRedo } from 'react-icons/io5';
 
 export const ContainerStyled = styled.div`
-margin: 5rem 0;
 padding: 12rem 0;
 `;
 
