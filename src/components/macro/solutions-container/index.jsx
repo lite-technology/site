@@ -1,7 +1,7 @@
-import { SolutionsContainer } from './styled-container';
-import { SolutionsCard } from '../../micro';
-import { HtmlLinkBlueLightStyled } from '../../styled';
-import OurServices from './services.data';
+import { SolutionsContainer } from "./styled-container";
+import { SolutionsCard } from "@components/micro";
+import { HtmlLinkBlueLightStyled } from "@components/styled";
+import OurServices from "./services.data";
 
 export default () => {
     return (
@@ -11,14 +11,19 @@ export default () => {
             </h2>
 
             <SolutionsContainer>
-                {OurServices.map((services, index) => (<SolutionsCard key={index} {...services} />))}
+                {OurServices.map((services, index) => (
+                    <SolutionsCard key={index} {...services} />
+                ))}
             </SolutionsContainer>
 
-            <HtmlLinkBlueLightStyled href={'/#contact'} style={{
-                margin: '4rem auto',
-                padding: '1.25rem',
-                maxWidth: '420px'
-            }}>
+            <HtmlLinkBlueLightStyled
+                href={"/#contact"}
+                style={{
+                    margin: "4rem auto",
+                    padding: "1.25rem",
+                    maxWidth: "420px",
+                }}
+            >
                 Entre em contato
             </HtmlLinkBlueLightStyled>
         </>

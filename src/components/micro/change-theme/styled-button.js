@@ -30,10 +30,6 @@ span {
     transition: margin .2s ease-out, transform .21s ease-out, background-color .21s ease-out;
 }
 
-i {
-    font-size: .5rem;
-}
-
 .show-dark,
 .show-light {
     display: none;
