@@ -2,10 +2,22 @@ import { LongTextInput, ShortTextInput } from "../../micro";
 import { ButtonBlueLightStyled, FormStyled } from "../../styled";
 
 export default () => {
+
+    function handleSubmit(event) {
+        event.preventDefault();
+
+        const form = event.target;
+        const status = form.checkValidity();
+
+        if (!status) {
+            form.classList.add('was-validated');
+        }
+    };
+
     return (
         <FormStyled
             id="contact"
-            onSubmit={(event) => event.preventDefault()}
+            onSubmit={handleSubmit}
             noValidate
         >
             <h4>Contato</h4>
@@ -47,7 +59,7 @@ export default () => {
                 describe="mensagem"
                 name="message"
                 placeholder="Como podemos te ajudar?"
-                invalidFeedback="Seja objetivo, nós entraremos em contato. Use de 10 a 500 caracteres."
+                invalidFeedback="Use de 10 a 500 caracteres. Seja objetivo, nós entraremos em contato para mais detalhes."
                 extraAttributes={{
                     minLength: 10,
                     maxLength: 500,
