@@ -1,7 +1,6 @@
 import { HtmlLinkBlueLightStyled } from "@components/styled";
-import { ChangeTheme, LetteringLogo } from "@components/micro";
-import { HeaderStyled } from "./styled-header";
-import { GroupActionsStyled } from "./styled-group-actions";
+import { LetteringLogo } from "@components/micro";
+import { HeaderStyled, GroupActionsStyled, LinkStyled } from "./styled-header";
 
 export const FloatingHeader = () => {
     return (
@@ -9,7 +8,10 @@ export const FloatingHeader = () => {
             <LetteringLogo />
 
             <GroupActionsStyled>
-                <ChangeTheme />
+                <LinkStyled href={"/#our-solutions"}>
+                    Nossas soluções
+                </LinkStyled>
+
                 <HtmlLinkBlueLightStyled href={"/#contact"}>
                     Contato
                 </HtmlLinkBlueLightStyled>

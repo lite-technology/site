@@ -20,3 +20,13 @@ border-radius: 20rem;
 background-color: ${getThemeProperty("cardBackground", "theme")};
 box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
 `;
+
+export const GroupActionsStyled = styled.div`
+display: flex;
+align-items: center;
+gap: .5rem;
+`;
+
+export const LinkStyled = styled.a`
+padding: .5rem 1rem;
+`;
