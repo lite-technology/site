@@ -1,3 +1,4 @@
+export * from './brand-square';
 export * from './change-theme';
 export * from './lettering-logo';
 export * from './input-short-text';
