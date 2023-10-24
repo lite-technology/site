@@ -4,7 +4,7 @@ import { getThemeProperty } from "@helpers/utilities";
 export const FooterStyled = styled.footer`
 display: flex;
 align-items: center;
-justify-content: center;
+justify-content: space-between;
 gap: 1rem;
 
 margin: 1rem auto;
@@ -15,4 +15,9 @@ border: 1px solid ${getThemeProperty("border", "theme")};
 border-radius: 20rem;
 
 background-color: ${getThemeProperty("cardBackground", "theme")};
+`;
+
+export const GroupLinksStyled = styled.nav`
+display: flex;
+gap: .5rem;
 `;

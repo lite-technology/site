@@ -1,4 +1,4 @@
-import { SolutionsContainer } from "./styled-container";
+import { SolutionsContainer, TitleStyled } from "./styled-container";
 import { SolutionsCard } from "@components/micro";
 import { HtmlLinkBlueLightStyled } from "@components/styled";
 import OurServices from "./services.data";
@@ -6,9 +6,9 @@ import OurServices from "./services.data";
 export default () => {
     return (
         <>
-            <h2 style={{ textAlign: "center", marginBottom: "2rem" }}>
+            <TitleStyled id="our-solutions">
                 NOSSAS SOLUÇÕES
-            </h2>
+            </TitleStyled>
 
             <SolutionsContainer>
                 {OurServices.map((services, index) => (
