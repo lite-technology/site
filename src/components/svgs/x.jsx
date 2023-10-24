@@ -1,3 +1,5 @@
+import { PathStyled } from './styled-path';
+
 export const XTwitterBrand = () => {
     return (
         <svg
