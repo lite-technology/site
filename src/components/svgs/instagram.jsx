@@ -28,10 +28,10 @@ export const InstagramBrand = () => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(26.5625 107.702) rotate(-90) scale(99.1074 92.1777)"
                 >
-                    <stop stop-color="#FFDD55" />
-                    <stop offset="0.1" stop-color="#FFDD55" />
-                    <stop offset="0.5" stop-color="#FF543E" />
-                    <stop offset="1" stop-color="#C837AB" />
+                    <stop stopColor="#FFDD55" />
+                    <stop offset="0.1" stopColor="#FFDD55" />
+                    <stop offset="0.5" stopColor="#FF543E" />
+                    <stop offset="1" stopColor="#C837AB" />
                 </radialGradient>
                 <radialGradient
                     id="paint1_radial_729_66"
@@ -41,9 +41,9 @@ export const InstagramBrand = () => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(-16.7504 7.20351) rotate(78.681) scale(44.3016 182.612)"
                 >
-                    <stop stop-color="#3771C8" />
-                    <stop offset="0.128" stop-color="#3771C8" />
-                    <stop offset="1" stop-color="#6600FF" stop-opacity="0" />
+                    <stop stopColor="#3771C8" />
+                    <stop offset="0.128" stopColor="#3771C8" />
+                    <stop offset="1" stopColor="#6600FF" stopOpacity="0" />
                 </radialGradient>
             </defs>
         </svg>
