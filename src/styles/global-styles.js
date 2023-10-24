@@ -125,4 +125,13 @@ a {
     text-decoration: none;
     transition: color .2s ease-out;
 }
+
+@keyframes rotate360 {
+    0% {
+        transform: rotateZ(0);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
 `;
