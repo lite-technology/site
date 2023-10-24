@@ -28,4 +28,35 @@ font-weight: bold;
 
 export const HtmlLinkBlueLightStyled = styled.a`${BlueLight}`;
 export const LinkBlueLightStyled = styled(Link)`${BlueLight}`;
-export const ButtonBlueLightStyled = styled.button`${BlueLight}`;
+
+export const ButtonBlueLightStyled = styled.button`
+${BlueLight}
+transition: background-color .21s ease-out;
+
+svg {
+    --size: 1.5rem;
+    position: absolute;
+
+    width: var(--size);
+    height: var(--size);
+    opacity: 0;
+    animation: rotate360 1s linear infinite;
+    transition: opacity .21s ease-out;
+    color: rgb(${getThemeProperty("purple", "paletteRGB")});
+}
+
+&:disabled {
+    cursor: no-drop;
+    box-shadow: unset;
+}
+
+&[data-loading=true] {
+    color: transparent;
+    border: 1px solid rgb(${getThemeProperty("purple", "paletteRGB")});
+    background-color: rgba(${getThemeProperty("purple", "paletteRGB")}, .3);
+
+    svg {
+        opacity: 1;
+    }
+}
+`;

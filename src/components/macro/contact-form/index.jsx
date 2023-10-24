@@ -1,24 +1,34 @@
-import { LongTextInput, ShortTextInput } from "../../micro";
-import { ButtonBlueLightStyled, FormStyled } from "../../styled";
+import { useForm } from "@formspree/react";
+import { AiOutlineLoading } from "react-icons/ai";
+
+import { LongTextInput, ShortTextInput } from "@components/micro";
+import { ButtonBlueLightStyled, FormStyled } from "@components/styled";
 
 export default () => {
+    const [spreeState, spreeHandleSubmit] = useForm("mzbqndwl");
 
-    function handleSubmit(event) {
+    async function handleSubmit(event) {
         event.preventDefault();
 
         const form = event.target;
-        const status = form.checkValidity();
+        const validation = form.checkValidity();
 
-        if (!status) {
-            form.classList.add('was-validated');
+        if (!validation) {
+            return form.classList.add("was-validated");
         }
-    };
+
+        await spreeHandleSubmit(event).finally(() => {
+            form.classList.remove("was-validated");
+            form.reset();
+        });
+    }
 
     return (
         <FormStyled
             id="contact"
             onSubmit={handleSubmit}
             noValidate
+            method="POST"
         >
             <h4>Contato</h4>
 
@@ -68,7 +78,13 @@ export default () => {
                 }}
             />
 
-            <ButtonBlueLightStyled type="submit">Enviar</ButtonBlueLightStyled>
+            <ButtonBlueLightStyled
+                type="submit"
+                data-loading={spreeState.submitting}
+                disabled={spreeState.submitting}
+            >
+                Enviar <AiOutlineLoading />
+            </ButtonBlueLightStyled>
         </FormStyled>
     );
 };
