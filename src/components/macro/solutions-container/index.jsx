@@ -1,7 +1,7 @@
 import { SolutionsContainer } from './styled-container';
-import data from './data';
 import { SolutionsCard } from '../../micro';
 import { HtmlLinkBlueLightStyled } from '../../styled';
+import OurServices from './services.data';
 
 export default () => {
     return (
@@ -11,7 +11,7 @@ export default () => {
             </h2>
 
             <SolutionsContainer>
-                {data.map((solutions, index) => (<SolutionsCard key={index} {...solutions} />))}
+                {OurServices.map((services, index) => (<SolutionsCard key={index} {...services} />))}
             </SolutionsContainer>
 
             <HtmlLinkBlueLightStyled href={'/#contact'} style={{
