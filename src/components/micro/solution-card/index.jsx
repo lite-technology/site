@@ -16,7 +16,7 @@ export const SolutionsCard = (props) => {
 
     return (
         <CardSolutions>
-            <h5>{category}</h5>
+            <h4>{category}</h4>
 
             {solutions.map((data, index) => (<Solution key={index} {...data} />))}
         </CardSolutions>
