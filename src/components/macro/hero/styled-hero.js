@@ -35,6 +35,10 @@ font-size: var(--font-size);
 p {
     max-width: 270px;
     letter-spacing: .05rem;
+
+    &::first-letter {
+        text-transform: uppercase;
+    }
 }
 
 svg {

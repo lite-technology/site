@@ -1,7 +1,16 @@
-import { IoDiamond } from "react-icons/io5";
-import { TbArrowsRandom } from "react-icons/tb";
-import { RayIconSvg } from "@components/svgs";
 import { ContainerSkillsStyled, HeroSectionStyled, SkillStyled } from "./styled-hero";
+import skillsData from "./skills.data";
+
+const SkillComponent = (props) => {
+    const { skill, Icon } = props;
+
+    return (
+        <SkillStyled>
+            <Icon />
+            <p>{skill}</p>
+        </SkillStyled>
+    );
+};
 
 export default () => {
     return (
@@ -12,18 +21,9 @@ export default () => {
             </p>
 
             <ContainerSkillsStyled>
-                <SkillStyled>
-                    <IoDiamond />
-                    <p>Qualidade</p>
-                </SkillStyled>
-                <SkillStyled>
-                    <RayIconSvg />
-                    <p>Agilidade</p>
-                </SkillStyled>
-                <SkillStyled>
-                    <TbArrowsRandom />
-                    <p>Customizado para cada cliente</p>
-                </SkillStyled>
+                {skillsData.map((skill, index) => (
+                    <SkillComponent key={index} {...skill} />
+                ))}
             </ContainerSkillsStyled>
         </HeroSectionStyled>
     );
