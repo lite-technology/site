@@ -15,7 +15,7 @@ justify-content: center;
 width: var(--size);
 height: var(--size);
 border-radius: 1rem;
-border: 1px solid ${getThemeProperty("border", "theme")};
+border: 1px groove ${getThemeProperty("border", "theme")};
 background-image: url(/svgs/square-${getThemeProperty("title", "theme")}.svg);
 box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .075);
 overflow: hidden;

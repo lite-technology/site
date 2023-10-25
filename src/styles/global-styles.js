@@ -123,7 +123,11 @@ input {
 a {
     color: inherit;
     text-decoration: none;
-    transition: color .2s ease-out;
+    transition: color .21s ease-out;
+
+    &:hover {
+        color: ${getThemeProperty("purple")};
+    }
 }
 
 @keyframes rotate360 {

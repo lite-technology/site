@@ -12,7 +12,7 @@ border-radius: 1rem;
 width: 368px;
 max-width: 100%;
 height: min-content;
-border: 1px solid ${getThemeProperty("border", "theme")};
+border: 1px groove ${getThemeProperty("border", "theme")};
 background-color: ${getThemeProperty("cardBackground", "theme")};
 
 h4 {

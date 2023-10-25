@@ -5,7 +5,7 @@ export const HeroSectionStyled = styled(SectionStyled)`
 display: flex;
 flex-direction: column;
 justify-content: flex-end;
-height: 75vh;
+height: 80vh;
 text-align: center;
 
 h1 {

@@ -13,7 +13,7 @@ margin: 3rem auto;
 padding: 3rem 1.5rem 2.5rem;
 width: 398px;
 max-width: 100%;
-border: 1px solid ${getThemeProperty("border", "theme")};
+border: 1px groove ${getThemeProperty("border", "theme")};
 border-radius: 1rem;
 background-color: ${getThemeProperty("cardBackground", "theme")};
 

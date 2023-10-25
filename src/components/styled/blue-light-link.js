@@ -18,11 +18,13 @@ background-color: ${getThemeProperty("blue200")};
 transition: box-shadow .170s ease-out;
 
 font-weight: bold;
+font-size: 1.1rem;
 
 &:hover {
     box-shadow:
         0 .2rem 3rem rgba(${getThemeProperty("blue", "paletteRGB")}, .7),
         0 .1rem 1rem rgba(${getThemeProperty("blue", "paletteRGB")}, .3);
+    color: ${getThemeProperty("light100")};
 }
 `;
 

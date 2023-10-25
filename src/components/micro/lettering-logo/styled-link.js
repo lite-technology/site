@@ -19,9 +19,13 @@ z-index: 1;
     transition: box-shadow .2s ease-out;
 }
 
-&:hover::before {
-    box-shadow:
-        0 0 12px rgba(${getThemeProperty("blue", "paletteRGB")}, 1),
-        0 0 24px rgba(${getThemeProperty("blue", "paletteRGB")}, 1);
+&:hover {
+    color: ${getThemeProperty("text", "theme")};
+
+    *::before {
+        box-shadow:
+            0 0 12px rgba(${getThemeProperty("blue", "paletteRGB")}, 1),
+            0 0 24px rgba(${getThemeProperty("blue", "paletteRGB")}, 1);
+    }
 }
 `;
