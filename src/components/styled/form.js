@@ -18,6 +18,7 @@ background-color: ${getThemeProperty("cardBackground", "theme")};
 .invalid-feedback {
     display: none;
     padding: 0 .5rem;
+    font-weight: bold;
 
     &::first-letter {
         text-transform: uppercase;

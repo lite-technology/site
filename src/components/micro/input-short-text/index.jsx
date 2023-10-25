@@ -9,12 +9,15 @@ export const ShortTextInput = (props) => {
         name,
         placeholder,
         invalidFeedback,
+        required = false,
         extraAttributes = {},
     } = props;
 
     return (
         <LabelStyled>
-            <div>{describe}</div>
+            <div>
+                {describe} {required && <sub>(obrigatório*)</sub>}
+            </div>
 
             <InputGroupStyled>
                 <InputStyled
@@ -23,6 +26,7 @@ export const ShortTextInput = (props) => {
                     autoSave="off"
                     autoComplete="off"
                     placeholder={placeholder}
+                    required={required}
                     {...extraAttributes}
                 />
 
@@ -40,12 +44,15 @@ export const LongTextInput = (props) => {
         name,
         placeholder,
         invalidFeedback,
+        required = false,
         extraAttributes = {},
     } = props;
 
     return (
         <LabelStyled>
-            <div>{describe}</div>
+            <div>
+                {describe} {required && <sub>(obrigatório*)</sub>}
+            </div>
 
             <InputGroupStyled>
                 <TextareaStyled
@@ -53,6 +60,7 @@ export const LongTextInput = (props) => {
                     name={name}
                     placeholder={placeholder}
                     rows={5}
+                    required={required}
                     {...extraAttributes}
                 />
 
