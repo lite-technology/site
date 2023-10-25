@@ -10,13 +10,13 @@ export default [
     {
         top: "61%",
         left: "12%",
-        transform: "rotateZ(-25deg)",
+        transform: "rotateZ(-30deg)",
         Icon: FacebookBrand,
     },
     {
         top: "61%",
         left: "75%",
-        transform: "rotateZ(-25deg)",
+        transform: "rotateZ(-12deg)",
         Icon: TikTokBrand,
     },
 ];

@@ -4,7 +4,7 @@ export default [
     {
         top: "19%",
         left: "25%",
-        transform: "rotateZ(-25deg)",
+        transform: "rotateZ(5deg)",
         Icon: TikTokBrand,
     },
     {
@@ -16,7 +16,7 @@ export default [
     {
         top: "12%",
         left: "65%",
-        transform: "rotateZ(-25deg)",
+        transform: "rotateZ(-35deg)",
         Icon: WhatsAppBrand,
     },
     {
