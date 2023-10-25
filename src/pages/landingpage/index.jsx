@@ -1,3 +1,4 @@
+import AboutSoftwares from "@components/macro/about-softwares";
 import AboutSocialMedia from "@components/macro/about-social-media";
 import AboutMarketing from "@components/macro/about-marketing";
 import SolutionsContainer from "@components/macro/solutions-container";
@@ -9,6 +10,10 @@ const LandingPage = () => {
     return (
         <>
             <FloatingHeader />
+
+            <SectionStyled>
+                <AboutSoftwares />
+            </SectionStyled>
 
             <SectionStyled>
                 <AboutSocialMedia />
