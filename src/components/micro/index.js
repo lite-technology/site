@@ -1,3 +1,4 @@
+export * from './animated-icon-logo';
 export * from './brand-square';
 export * from './change-theme';
 export * from './lettering-logo';
