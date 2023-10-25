@@ -139,6 +139,21 @@ a {
     }
 }
 
+@keyframes movement-background {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(5rem, 0);
+    }
+    50% {
+        transform: translate(5rem, 5rem);
+    }
+    75% {
+        transform: translate(0, 5rem);
+    }
+}
+
 @media (min-width: 720px) {
     .desktop-hidden {
         display: none;
