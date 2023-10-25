@@ -7,7 +7,7 @@ export const HeaderStyled = styled.header`
     justify-content: flex-end;
     flex-direction: column;
 
-    padding: 3rem 0;
+    padding: 3rem 1rem;
 
     h1 {
         margin-bottom: 1rem;
@@ -16,6 +16,16 @@ export const HeaderStyled = styled.header`
 
     p {
         font-size: larger;
+    }
+
+    @media (max-width: 469px) {
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: medium;
+        }
     }
 `;
 
@@ -34,6 +44,8 @@ export const FigureStyled = styled.figure`
     border-radius: 50%;
     border: 1px groove ${getThemeProperty("border", "theme")};
     background-color: ${getThemeProperty("dark300")};
+
+    transition: width .21s ease-out;
 
     &::before {
         content: "";
@@ -58,6 +70,14 @@ export const FigureStyled = styled.figure`
         &::before {
             left: -100%;
             transform: rotateZ(90deg) translateY(-50%);
+        }
+    }
+
+    @media (max-width: 469px) {
+        --size: 100px;
+
+        svg {
+            --size: 70px;
         }
     }
 `;

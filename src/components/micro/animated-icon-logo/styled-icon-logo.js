@@ -3,8 +3,9 @@ import styled from "styled-components";
 import { getThemeProperty } from "@helpers/utilities";
 
 export const SvgStyled = styled.svg`
+--size: 120px;
 display: block;
-width: 120px;
+width: var(--size);
 max-width: 100%;
 height: min-content;
 
