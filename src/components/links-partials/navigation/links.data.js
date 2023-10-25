@@ -1,16 +1,16 @@
 export default [
     {
-        to: "/",
-        describe: "Faça parte da nossa comunidade",
+        to: "https://discord.gg/JwPqa3a23X",
+        describe: "Comunidade no Discord",
         externalLink: true,
     },
     {
-        to: "/",
+        to: "https://www.instagram.com/litetechnology/",
         describe: "Instagram",
         externalLink: true,
     },
     {
-        to: "/",
+        to: "https://docs.google.com/forms/d/e/1FAIpQLScnl2kt5qPR4tbVyCqVqtmQdNY-l88deZM_Jz8gja1Mo6CdeQ/viewform?usp=sf_link",
         describe: "Seja um parceiro",
         externalLink: true,
     },
@@ -22,15 +22,15 @@ export default [
     {
         to: "/",
         describe: "site",
-        externalLink: true,
+        externalLink: false,
     },
     {
-        to: "/",
+        to: "https://github.com/lite-technology",
         describe: "GitHub",
         externalLink: true,
     },
     {
-        to: "/",
+        to: "https://wa.me/message/REEAHEE2K24EO1",
         describe: "Contato (WhatsApp)",
         externalLink: true,
     },
