@@ -9,7 +9,7 @@ export default [
     },
     {
         top: "21%",
-        left: "75%",
+        left: "70%",
         transform: "rotateZ(5deg)",
         Icon: WebIconSvg,
     },

@@ -3,7 +3,7 @@ import { WhatsAppBrand, TikTokBrand, XTwitterBrand, InstagramBrand } from "@comp
 export default [
     {
         top: "19%",
-        left: "25%",
+        left: "20%",
         transform: "rotateZ(5deg)",
         Icon: TikTokBrand,
     },
@@ -21,7 +21,7 @@ export default [
     },
     {
         top: "60%",
-        left: "75%",
+        left: "70%",
         transform: "rotateZ(35deg)",
         Icon: XTwitterBrand,
     },

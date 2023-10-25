@@ -15,6 +15,22 @@ border: 1px groove ${getThemeProperty("border", "theme")};
 border-radius: 20rem;
 
 background-color: ${getThemeProperty("cardBackground", "theme")};
+
+@media (max-width: 820px) {
+    transition: all .21s ease-out;
+}
+
+@media (max-width: 720px) {
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 1rem 1.5rem;
+    max-width: 100%;
+    border-radius: 0;
+}
+
+@media (max-width: 328px) {
+    justify-content: center;
+}
 `;
 
 export const GroupLinksStyled = styled.nav`

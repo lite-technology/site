@@ -138,4 +138,16 @@ a {
         transform: rotateZ(360deg);
     }
 }
+
+@media (min-width: 720px) {
+    .desktop-hidden {
+        display: none;
+    }
+}
+
+@media (max-width: 720px) {
+    .mobile-hidden {
+        display: none;
+    }
+}
 `;

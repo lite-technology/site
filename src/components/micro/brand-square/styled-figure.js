@@ -37,4 +37,20 @@ svg {
     width: var(--size);
     height: var(--size);
 }
+
+@media (max-width: 768px) {
+    --size: 6rem;
+
+    svg {
+        --size: 2.5rem;
+    }
+}
+
+@media (max-width: 468px) {
+    --size: 4rem;
+
+    svg {
+        --size: 1.5rem;
+    }
+}
 `;

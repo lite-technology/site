@@ -15,7 +15,7 @@ export default [
     },
     {
         top: "61%",
-        left: "75%",
+        left: "67%",
         transform: "rotateZ(-12deg)",
         Icon: TikTokBrand,
     },

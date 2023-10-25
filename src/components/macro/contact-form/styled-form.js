@@ -48,5 +48,13 @@ background-color: ${getThemeProperty("cardBackground", "theme")};
 h1, h2, h3, h4, h5, h6 {
     margin-bottom: 2rem;
 }
+
+@media (max-width: 820px) {
+    h1, h2, h3, h4, h5, h6 {
+        text-align: center;
+    }
+
+    padding: 3rem 1rem 2rem;
+}
 `;
 

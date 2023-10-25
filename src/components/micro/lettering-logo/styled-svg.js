@@ -15,4 +15,8 @@ path {
 &:hover .ray {
     fill: ${getThemeProperty('blue200')};
 }
+
+@media (max-width: 720px) {
+    width: 70px;
+}
 `;
