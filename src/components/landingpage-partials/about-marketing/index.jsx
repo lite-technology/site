@@ -9,7 +9,7 @@ import {
 } from "./styled-marketing";
 import brandsData from "./brands.data";
 
-export default () => {
+export const AboutMarketingSection = () => {
     return (
         <MarketingSection>
             <ContainerStyled>

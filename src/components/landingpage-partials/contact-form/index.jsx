@@ -5,7 +5,7 @@ import { ButtonBlueLightStyled } from "@components/styled";
 import { FormSection, FormStyled } from "./styled-form";
 import shortInputConfig from "./short-input.config";
 
-export default () => {
+export const ContactFormSection = () => {
     const [spreeState, spreeHandleSubmit] = useForm("mzbqndwl");
 
     async function handleSubmit(event) {

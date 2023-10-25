@@ -7,7 +7,7 @@ import {
 } from "./styled-solutions";
 import OurServices from "./services.data";
 
-export default () => {
+export const SolutionsSection = () => {
     return (
         <SolutionsSectionStyled>
             <TitleStyled id="our-solutions">NOSSAS SOLUÇÕES</TitleStyled>

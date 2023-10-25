@@ -6,7 +6,7 @@ import {
     SocialSectionStyled,
 } from "./styled-social-media";
 
-export default () => {
+export const AboutSocialMediaSection = () => {
     return (
         <SocialSectionStyled>
             <SupTextStyled>SOCIAL</SupTextStyled>

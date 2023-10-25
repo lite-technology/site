@@ -12,7 +12,7 @@ const SkillComponent = (props) => {
     );
 };
 
-export default () => {
+export const HeroSection = () => {
     return (
         <HeroSectionStyled>
             <h1>LITE TECHNOLOGY</h1>

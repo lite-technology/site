@@ -7,7 +7,7 @@ import {
     SoftwaresSection,
 } from "./styled-softwares";
 
-export default () => {
+export const AboutSoftwaresSection = () => {
     return (
         <SoftwaresSection>
             <SupTextStyled>DESENVOLVIMENTO</SupTextStyled>
