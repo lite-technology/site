@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import { SectionStyled } from "@components/styled";
+
+export const SolutionsSectionStyled = styled(SectionStyled)``;
 
 export const SolutionsContainer = styled.div`
 display: flex;

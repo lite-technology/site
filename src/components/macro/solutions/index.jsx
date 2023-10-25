@@ -1,14 +1,16 @@
-import { SolutionsContainer, TitleStyled } from "./styled-container";
 import { SolutionsCard } from "@components/micro";
 import { HtmlLinkBlueLightStyled } from "@components/styled";
+import {
+    SolutionsContainer,
+    SolutionsSectionStyled,
+    TitleStyled,
+} from "./styled-solutions";
 import OurServices from "./services.data";
 
 export default () => {
     return (
-        <>
-            <TitleStyled id="our-solutions">
-                NOSSAS SOLUÇÕES
-            </TitleStyled>
+        <SolutionsSectionStyled>
+            <TitleStyled id="our-solutions">NOSSAS SOLUÇÕES</TitleStyled>
 
             <SolutionsContainer>
                 {OurServices.map((services, index) => (
@@ -26,6 +28,6 @@ export default () => {
             >
                 Entre em contato
             </HtmlLinkBlueLightStyled>
-        </>
+        </SolutionsSectionStyled>
     );
 };

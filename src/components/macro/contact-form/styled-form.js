@@ -1,5 +1,8 @@
 import styled from "styled-components";
 import { getThemeProperty } from "@helpers/utilities";
+import { SectionStyled } from "@components/styled";
+
+export const FormSection = styled(SectionStyled)``;
 
 export const FormStyled = styled.form`
 display: flex;
@@ -46,3 +49,4 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 2rem;
 }
 `;
+

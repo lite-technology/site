@@ -1,5 +1,8 @@
 import styled from "styled-components";
 import { IoArrowRedo } from 'react-icons/io5';
+import { SectionStyled } from "@components/styled";
+
+export const MarketingSection = styled(SectionStyled)``;
 
 export const ContainerStyled = styled.div`
 padding: 12rem 0;

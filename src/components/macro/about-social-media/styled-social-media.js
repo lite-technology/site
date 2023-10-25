@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { SectionStyled } from "@components/styled";
 
-export const ContainerStyled = styled.div`
+export const SocialSectionStyled = styled(SectionStyled)`
 padding: 12rem 0;
 text-align: center;
 `;

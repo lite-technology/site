@@ -8,8 +8,7 @@ export default () => {
         <HeroSectionStyled>
             <h1>LITE TECHNOLOGY</h1>
             <p>
-                Desenvolimento, design e criatividade para o seu negócio
-                crescer.
+                Desenvolvimento, design e criatividade para o seu negócio crescer
             </p>
 
             <ContainerSkillsStyled>

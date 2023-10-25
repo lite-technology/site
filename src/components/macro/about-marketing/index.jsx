@@ -5,12 +5,13 @@ import {
     RedoIconStyled,
     ParagraphStryled,
     ContainerStyled,
-} from "./styled-content";
+    MarketingSection,
+} from "./styled-marketing";
 import brandsData from "./brands.data";
 
 export default () => {
     return (
-        <>
+        <MarketingSection>
             <ContainerStyled>
                 <TitleStyled>
                     MARKETING
@@ -23,6 +24,6 @@ export default () => {
             </ContainerStyled>
 
             {brandsData.map((data, index) => (<BrandSquare key={index} {...data} />))}
-        </>
+        </MarketingSection>
     );
 };

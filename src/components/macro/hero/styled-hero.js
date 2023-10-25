@@ -7,6 +7,10 @@ flex-direction: column;
 justify-content: flex-end;
 height: 75vh;
 text-align: center;
+
+h1 {
+    margin-bottom: 1rem;
+}
 `;
 
 export const ContainerSkillsStyled = styled.div`

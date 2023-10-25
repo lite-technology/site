@@ -1,14 +1,14 @@
 import { BrandSquare } from "@components/micro";
 import brandsData from "./brands.data";
 import {
-    ContainerStyled,
     TitleStyled,
     SupTextStyled,
-} from "./styled-container";
+    SocialSectionStyled,
+} from "./styled-social-media";
 
 export default () => {
     return (
-        <ContainerStyled>
+        <SocialSectionStyled>
             <SupTextStyled>SOCIAL</SupTextStyled>
 
             <TitleStyled>MEDIA</TitleStyled>
@@ -16,6 +16,6 @@ export default () => {
             {brandsData.map((data, index) => (
                 <BrandSquare key={index} {...data} />
             ))}
-        </ContainerStyled>
+        </SocialSectionStyled>
     );
 };
