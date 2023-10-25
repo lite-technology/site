@@ -16,9 +16,21 @@ width: var(--size);
 height: var(--size);
 border-radius: 1rem;
 border: 1px solid ${getThemeProperty("border", "theme")};
-background-color: ${getThemeProperty("background", "theme")};
 background-image: url(/svgs/square-${getThemeProperty("title", "theme")}.svg);
 box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .075);
+overflow: hidden;
+
+&::before {
+    content: '';
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+    right: -1rem;
+    bottom: -1rem;
+    z-index: -1;
+    backdrop-filter: blur(3px);
+    background-color: ${getThemeProperty("background", "theme")}80;
+}
 
 svg {
     --size: 3.2rem;
