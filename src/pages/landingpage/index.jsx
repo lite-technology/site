@@ -6,7 +6,7 @@ import Solutions from "@components/macro/solutions";
 import ContactForm from "@components/macro/contact-form";
 import { FloatingHeader, LegalFooter } from "@components/micro";
 
-const LandingPage = () => {
+export default () => {
     return (
         <>
             <FloatingHeader />
@@ -20,5 +20,3 @@ const LandingPage = () => {
         </>
     );
 };
-
-export default LandingPage;
