@@ -4,7 +4,7 @@ export const NavigationSection = () => {
     return (
         <NavigationStyled>
             <LinkStyled to={'/'}>
-                Página inicial
+                Voltar ao ínicio
             </LinkStyled>
         </NavigationStyled>
     );

@@ -3,12 +3,16 @@ import {
     BodySection,
     NavigationSection,
 } from "@components/error-partials";
+import { useParams } from "react-router-dom";
 
-export default () => {
+export default (props) => {
+    const { code } = useParams();
+    const selectCode = parseInt(code) || parseInt(props.code);
+
     return (
         <>
             <HeaderSection />
-            <BodySection />
+            <BodySection code={selectCode} />
             <NavigationSection />
         </>
     );
