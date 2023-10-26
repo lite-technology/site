@@ -26,6 +26,9 @@ background-color: ${getThemeProperty("cardBackground", "theme")};
     padding: 1rem 1.5rem;
     max-width: 100%;
     border-radius: 0;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
 }
 
 @media (max-width: 328px) {

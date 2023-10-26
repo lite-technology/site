@@ -27,9 +27,12 @@ box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
 @media (max-width: 720px) {
     top: 0;
     margin: 0;
-    padding: 1.2rem 1.5rem;
+    padding: 1rem;
     max-width: 100%;
     border-radius: 0;
+    border-top: none;
+    border-right: none;
+    border-left: none;
 }
 `;
 
