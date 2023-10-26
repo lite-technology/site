@@ -2,6 +2,11 @@ import styled from "styled-components";
 import { getThemeProperty } from "@helpers/utilities";
 
 export const FigureStyled = styled.figure`
+&,
+* {
+    user-select: none;
+}
+
 position: absolute;
 top: 0;
 left: 0;
