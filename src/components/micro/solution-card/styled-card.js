@@ -16,10 +16,15 @@ border: 1px groove ${getThemeProperty("border", "theme")};
 background-color: ${getThemeProperty("cardBackground", "theme")};
 
 h4 {
-    margin-bottom: .5rem;
+    margin-bottom: .7rem;
 }
 
 h6 {
-    margin-bottom: .25rem;
+    margin-bottom: .4rem;
+    text-transform: uppercase;
+}
+
+p {
+    line-height: 1.05;
 }
 `;
