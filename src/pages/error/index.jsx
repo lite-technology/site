@@ -1,15 +1,19 @@
-import React from 'react';
+import {
+    HeaderSection,
+    BodySection,
+    NavigationSection,
+} from "@components/error-partials";
+import { useParams } from "react-router-dom";
 
-import Navbar from '../../components/navbar';
-import Footer from '../../components/footer';
+export default (props) => {
+    const { code } = useParams();
+    const selectCode = parseInt(code) || parseInt(props.code);
 
-const Error = () => {
-
-    retun (
+    return (
         <>
-
+            <HeaderSection />
+            <BodySection code={selectCode} />
+            <NavigationSection />
         </>
-    )
-}
-
-export default Error
+    );
+};
